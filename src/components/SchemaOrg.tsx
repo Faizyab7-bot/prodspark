@@ -1,5 +1,4 @@
-import * as ReactHelmetAsync from 'react-helmet-async';
-const { Helmet } = ReactHelmetAsync;
+import { Helmet } from 'react-helmet-async';
 
 interface SchemaOrgProps {
     data: any;

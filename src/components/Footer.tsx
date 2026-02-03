@@ -22,13 +22,16 @@ export const Footer = () => {
                         </p>
                         <div className="flex gap-4">
                             {[
-                                { icon: <Twitter size={18} />, link: "#" },
-                                { icon: <Github size={18} />, link: "#" },
-                                { icon: <Linkedin size={18} />, link: "#" }
+                                { icon: <Twitter size={18} />, link: "https://x.com/FaizyabHus74391", label: "Twitter" },
+                                { icon: <Github size={18} />, link: "https://github.com/FaizyabHussain07", label: "GitHub" },
+                                { icon: <Linkedin size={18} />, link: "https://www.linkedin.com/in/faizyabhussain/", label: "LinkedIn" }
                             ].map((social, i) => (
                                 <a
                                     key={i}
                                     href={social.link}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    aria-label={social.label}
                                     className="w-10 h-10 rounded-xl bg-slate-50 dark:bg-slate-900 border border-main flex items-center justify-center text-slate-400 hover:text-primary hover:border-primary/20 transition-all"
                                 >
                                     {social.icon}
