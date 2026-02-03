@@ -82,7 +82,14 @@ export const Navbar = () => {
                 <div className="md:hidden flex items-center gap-3">
                     <ThemeToggle />
                     <SignedIn>
-                        <UserButton afterSignOutUrl="/" />
+                        <UserButton
+                            afterSignOutUrl="/"
+                            appearance={{
+                                elements: {
+                                    userButtonAvatarBox: 'w-9 h-9 border-2 border-primary/20 hover:border-primary transition-colors'
+                                }
+                            }}
+                        />
                     </SignedIn>
                     <button
                         onClick={() => setIsMenuOpen(!isMenuOpen)}
