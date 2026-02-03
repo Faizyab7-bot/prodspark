@@ -10,6 +10,7 @@ import { Products } from './pages/Products.tsx';
 import { ProductDetails } from './pages/ProductDetails.tsx';
 import { SubmitProduct } from './pages/SubmitProduct.tsx';
 import { SignInPage } from './pages/SignIn.tsx';
+import { SignUpPage } from './pages/SignUp.tsx';
 import { SignedIn, SignedOut, RedirectToSignIn } from '@clerk/clerk-react';
 
 const CLERK_PUBLISHABLE_KEY = import.meta.env.VITE_CLERK_PUBLISHABLE_KEY;
@@ -37,7 +38,7 @@ function App() {
                   </>
                 } />
                 <Route path="/sign-in/*" element={<SignInPage />} />
-                <Route path="/sign-up/*" element={<SignInPage />} />
+                <Route path="/sign-up/*" element={<SignUpPage />} />
                 <Route path="*" element={<Navigate to="/" replace />} />
               </Routes>
             </main>

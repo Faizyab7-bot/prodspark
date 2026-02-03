@@ -1,13 +1,13 @@
-import { SignIn } from '@clerk/clerk-react';
+import { SignUp } from '@clerk/clerk-react';
 
-export const SignInPage = () => {
+export const SignUpPage = () => {
     return (
         <div className="min-h-[calc(100vh-64px)] flex items-center justify-center p-4 bg-slate-50 dark:bg-slate-950">
             <div className="w-full max-w-md">
-                <SignIn
+                <SignUp
                     routing="path"
-                    path="/sign-in"
-                    signUpUrl="/sign-up"
+                    path="/sign-up"
+                    signInUrl="/sign-in"
                     appearance={{
                         elements: {
                             formButtonPrimary: 'bg-primary hover:bg-orange-600 text-sm normal-case',
